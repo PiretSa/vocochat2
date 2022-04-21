@@ -1,16 +1,29 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './App.css';
+import Input from "./components/input/Input";
 import Chat from "./components/chat/Chat";
+import { disconnectSocket, connectToServer } from './Socket-service.js';
 
 
 
 function App() {
+    useEffect(() => {
+
+        connectToServer();
+        return () => {
+            disconnectSocket();
+        }
+    }, []);
+
+
   return (
     <div className="background">
         <div className="voco">
-            VOCO Chat
+            VOCOommunication
         </div>
-      <div className="chat"><Chat/>
+      <div className="chat">
+          <Chat/>
+          <Input />
 
       </div>
     </div>

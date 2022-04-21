@@ -11,30 +11,32 @@
 .voco {
     font-size: calc(10px + 2vmin);
     color: white;
+    padding: 10px;
 }
 
 .chat {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     border-radius: 7px;
     margin: auto;
     margin-bottom: auto;
     background-color: #222;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .card {
     border: 1px solid grey;
     border-radius: 3px;
     margin: 10px;
-    font-size: small;
+    padding: 5px;
+    font-size: 11px;
     background-color: dimgrey;
     width: auto;
+    height: 85px;
 }
 
-.author {
-color: whitesmoke;
-}
+
+
 
 
