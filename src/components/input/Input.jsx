@@ -1,9 +1,11 @@
 import React from 'react';
 
-function Input({placeholder}) {
+function Input({placeholder, onChange, value}) {
     return (
         <div>
-            <input placeholder={placeholder} />
+            <input placeholder={placeholder}
+                   value={value}
+            onChange = {(e ) => onChange(e.target.value)}/>
         </div>
     );
 }

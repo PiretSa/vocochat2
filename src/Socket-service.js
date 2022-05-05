@@ -1,4 +1,4 @@
-export const socket: any = new WebSocket('ws://localhost:4000/');
+export const socket = new WebSocket('ws://localhost:4000/');
 
 
 export async function connectToServer() {

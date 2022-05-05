@@ -1,13 +1,12 @@
 import React from 'react';
 import Card from "../card/Card";
-import data from '../../data.json';
 
 
 
-function Chat() {
+function Chat({messages}) {
     return (
         <div className="chat">
-            {data.map((item)=> {
+            {messages.map((item) => {
                 return(<Card
             message={item.message}
             author={item.username}
